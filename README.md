@@ -1,2 +1,2 @@
-# softeng754-a4
+# softeng754-a4 [![Build Status](https://travis-ci.com/iahmedsuhail/softeng754-a4.svg?token=yWvuPetqZqWuCMzzTRek&branch=master)](https://travis-ci.com/iahmedsuhail/softeng754-a4) [![codecov](https://codecov.io/gh/iahmedsuhail/softeng754-a4/branch/master/graph/badge.svg?token=3SDAY5KF2F)](https://codecov.io/gh/iahmedsuhail/softeng754-a4)
 Course Enrollment System for a university using TDD and CI techniques.
