@@ -4,16 +4,16 @@ public class Course {
     String name;
     String code;
     int points;
-    boolean availaibility;
+    boolean availability;
 
     int maxNumberOfStudents;
     ArrayList<String> prereqs;
 
-    public Course(String name, String code, Integer points, boolean availaibility) {
+    public Course(String name, String code, Integer points, boolean availability) {
         this.name = name;
         this.code = code;
         this.points = points;
-        this.availaibility = availaibility;
+        this.availability = availability;
         this.prereqs = new ArrayList<>();
     }
 
@@ -29,8 +29,8 @@ public class Course {
         return points;
     }
 
-    public boolean getAvailaibility() {
-        return availaibility;
+    public boolean getAvailability() {
+        return availability;
     }
 
     public void setMaxNumberOfStudents(int maxNumberOfStudents) {
@@ -41,8 +41,8 @@ public class Course {
         this.prereqs.add(code);
     }
 
-    public void setAvailaibility(boolean availaibility) {
-        this.availaibility = availaibility;
+    public void setAvailability(boolean availability) {
+        this.availability = availability;
     }
 
     public ArrayList<String> getPrereqs() {

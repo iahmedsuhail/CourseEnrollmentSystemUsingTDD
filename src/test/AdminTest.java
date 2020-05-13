@@ -1,9 +1,7 @@
 import java.util.ArrayList;
-
 import static org.junit.Assert.*;
 
 public class AdminTest {
-
 
     @org.junit.Test
     public void testAdminCanSetGuidelines() {
@@ -19,7 +17,7 @@ public class AdminTest {
         assertEquals(resultPrereqs, course.getPrereqs());
 
 //        set availability
-        course.setAvailaibility(false);
-        assertEquals(false, course.getAvailaibility());
+        course.setAvailability(false);
+        assertEquals(false, course.getAvailability());
     }
 }

@@ -8,6 +8,6 @@ public class CourseTest {
         assertEquals("Software Requirements Engineering", course.getName());
         assertEquals("SOFTENG754", course.getCode());
         assertEquals(15, course.getPoints());
-        assertEquals(true, course.getAvailaibility());
+        assertEquals(true, course.getAvailability());
     }
 }
