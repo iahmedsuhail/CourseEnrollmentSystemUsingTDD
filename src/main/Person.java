@@ -1,5 +1,5 @@
 public class Person {
-    boolean loggedIn;
+    public boolean loggedIn;
 
     public Person() {
         this.loggedIn = false;
