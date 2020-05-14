@@ -5,7 +5,7 @@ public class ControllerTest {
     @org.junit.Test
     public void testPersonCanLogin() {
         Person person = new Person();
-        person.login("username", "password");
+        Controller.login(person,"username", "password");
         assertTrue(person.isLoggedIn());
     }
 }
