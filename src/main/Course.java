@@ -52,4 +52,8 @@ public class Course {
     public int getMaxNumberOfStudents() {
         return maxNumberOfStudents;
     }
+
+    public String showInfo(){
+        return String.format("Name: %s Code: %s", this.name, this.code);
+    }
 }
