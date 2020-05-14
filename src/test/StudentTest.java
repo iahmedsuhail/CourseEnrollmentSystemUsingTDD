@@ -1,8 +1,5 @@
-import javax.swing.plaf.ColorUIResource;
 import java.util.ArrayList;
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 public class StudentTest {
     @org.junit.Test
@@ -20,7 +17,5 @@ public class StudentTest {
 
 //        This test gets details (as a string) of the enrolledCourses and the course we just added
         assert(student.getEnrolledCourses().get(student.enrolledCourses.size()-1).showInfo().equals(resultEnrolledCourses.get(0).showInfo()));
-
-
     }
 }
