@@ -1,4 +1,5 @@
 public class Person {
+    String name;
     public boolean loggedIn;
 
     public Person() {
@@ -7,5 +8,9 @@ public class Person {
 
     public boolean isLoggedIn() {
         return loggedIn;
+    }
+
+    public String getName() {
+        return null;
     }
 }
