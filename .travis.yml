@@ -4,8 +4,12 @@ env:
   global:
     - CODECOV_TOKEN="a67e36c9-4c07-41fe-a5a7-f6e21104d13a"
 
-before_install:
+before_script:
   - chmod +x gradlew
+
+script:
+  - ./gradlew check
+  - ./gradlew codeCoverageReport
 
 after_success:
   - ./gradle jacocoTestReport
