@@ -2,6 +2,8 @@ plugins {
     id 'java'
 }
 
+apply plugin: 'jacoco'
+
 group 'org.example'
 version '1.0-SNAPSHOT'
 
@@ -17,3 +19,12 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        html.enabled false
+    }
+}
+
+check.dependsOn jacocoTestReport
