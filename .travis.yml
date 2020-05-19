@@ -12,6 +12,5 @@ script:
   - ./gradlew codeCoverageReport
 
 after_success:
-  - if [ -e ./gradlew ]; then ./gradlew jacocoTestReport;else gradle jacocoTestReport;fi
   - ./gradle jacocoTestReport
   - bash <(curl -s https://codecov.io/bash) -t a67e36c9-4c07-41fe-a5a7-f6e21104d13a
