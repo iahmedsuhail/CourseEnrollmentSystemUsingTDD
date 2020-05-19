@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-05-20T00:01:55" hostname="BITCHIN" time="0.907">
+  <properties/>
+  <testcase name="testCanSubmitEnrollmentConcession" classname="ControllerTest" time="0.905"/>
+  <testcase name="testPersonCanLogin" classname="ControllerTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
