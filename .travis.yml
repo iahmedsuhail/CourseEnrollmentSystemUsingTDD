@@ -7,6 +7,10 @@ env:
 before_install:
   - chmod +x gradlew
 
+script:
+  - ./gradlew check
+  - ./gradlew codeCoverageReport
+
 after_success:
   - ./gradle jacocoTestReport
-  - bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash) -t a67e36c9-4c07-41fe-a5a7-f6e21104d13a
