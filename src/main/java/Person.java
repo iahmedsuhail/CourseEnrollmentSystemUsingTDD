@@ -8,6 +8,11 @@ public class Person {
         this.loggedIn = false;
     }
 
+    public Person(String name) {
+        this();
+        this.name = name;
+    }
+
     public boolean isLoggedIn() {
         return loggedIn;
     }
