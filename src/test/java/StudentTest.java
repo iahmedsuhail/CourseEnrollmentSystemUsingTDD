@@ -30,4 +30,17 @@ public class StudentTest {
 
         assertEquals(500, student.feeLiable);
     }
+
+    @org.junit.Test
+    public void Given_CourseIsNotAvailable_Expect_StudentsCantBeEnrolledIntoCourse(){
+        Course course = new Course("Software Requirements Engineering", "SOFTENG754", 15, true);
+        course.setAvailability(false);
+
+        Student student = new Student();
+        ArrayList<Course> emptyListOfCourses = new ArrayList<>();
+
+        student.enrol(course);
+
+        assert(emptyListOfCourses.equals(student.getEnrolledCourses()));
+    }
 }
