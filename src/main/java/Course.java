@@ -67,6 +67,6 @@ public class Course {
     }
 
     public String getInstructor(){
-        return "";
+        return this.instructor.name;
     }
 }
