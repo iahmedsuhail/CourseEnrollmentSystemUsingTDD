@@ -1,5 +1,3 @@
-
-
 import java.util.ArrayList;
 
 public class Course {
@@ -8,6 +6,7 @@ public class Course {
     int points;
     boolean availability;
     Teacher instructor;
+    int fee;
 
     int maxNumberOfStudents;
     ArrayList<String> prereqs;
@@ -22,8 +21,12 @@ public class Course {
 
     public Course(String name, String code, Integer points, boolean availability, Teacher teacher) {
         this(name, code, points, availability);
-
         this.instructor = teacher;
+    }
+
+    public Course(String name, String code, Integer points, boolean availability, Teacher teacher, int fee){
+        this(name, code, points, availability, teacher);
+        this.fee = fee;
     }
 
     public String getName() {
