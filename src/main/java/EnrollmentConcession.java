@@ -9,7 +9,8 @@ public class EnrollmentConcession {
     }
 
     public EnrollmentConcession(Student student, Course course, String description){
-
+        this(student, course);
+        this.description = description;
     }
 
     public String getDetails() {
@@ -17,6 +18,6 @@ public class EnrollmentConcession {
     }
 
     public String getDescription(){
-        return "";
+        return this.description;
     }
 }
