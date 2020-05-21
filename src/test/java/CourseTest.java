@@ -34,4 +34,13 @@ public class CourseTest {
 
         assertEquals(resultEnrolledCourses, student.getEnrolledCourses());
     }
+
+    @org.junit.Test
+    public void testCanSeeInstructor() {
+//        Create a new course with an instructor.
+        Teacher teacher = new Teacher();
+        Course course = new Course("Software Requirements Engineering", "SOFTENG754", 15, true, teacher);
+
+        assertEquals("Kelly Blincoe", course.getInstructor());
+    }
 }
