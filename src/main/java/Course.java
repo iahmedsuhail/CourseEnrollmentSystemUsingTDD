@@ -7,6 +7,7 @@ public class Course {
     String code;
     int points;
     boolean availability;
+    Teacher instructor;
 
     int maxNumberOfStudents;
     ArrayList<String> prereqs;
@@ -17,6 +18,12 @@ public class Course {
         this.points = points;
         this.availability = availability;
         this.prereqs = new ArrayList<>();
+    }
+
+    public Course(String name, String code, Integer points, boolean availability, Teacher teacher) {
+        this(name, code, points, availability);
+
+        this.instructor = teacher;
     }
 
     public String getName() {
@@ -57,5 +64,9 @@ public class Course {
 
     public String showInfo(){
         return String.format("Name: %s Code: %s", this.name, this.code);
+    }
+
+    public String getInstructor(){
+        return "";
     }
 }
