@@ -14,6 +14,7 @@ public class AutomaticCourseEnrollment {
         courseClassList.add(new CourseClass("XYZ", "456", 0, true));
         courseClassList.add(new CourseClass("LMN", "789", 0, true));
         CourseClass cor2 = courseClassList.get(1);
+        cor2.makeMandatory();
         EnrollmentManager sys = new EnrollmentManager(courseClassList);
         StudentClass studentClass = new StudentClass();
         sys.AutoEnroll(studentClass);
