@@ -22,4 +22,14 @@ public class ControllerTest {
         Mockito.when(mockedStudent.getName()).thenReturn("Ahmed");
         assertEquals("Ahmed wants to enrol in SOFTENG754", ec.getDetails());
     }
+
+    @org.junit.Test
+    public void Given_StudentSubmitsEnrollmentConcession_Expect_StudentCanSubmitDescription(){
+        Student student = new Student();
+        Course course = new Course("Software Requirements Engineering", "SOFTENG754", 15, true);
+
+        EnrollmentConcession ec = new EnrollmentConcession(student, course, "Prereqs were done in another institution");
+
+        assertEquals("Prereqs were done in another institution", ec.getDescription());
+    }
 }
