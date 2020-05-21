@@ -1,0 +1,6 @@
+
+
+enum PersonRole {
+    ADMIN,
+    STUDENT
+}

@@ -1,23 +1,32 @@
 public class EnrollmentConcession {
-    Student student;
-    Course course;
-    String description;
-
-    public EnrollmentConcession(Student student, Course course) {
-        this.student = student;
-        this.course = course;
+    private StudentClass studentClass;
+    private CourseClass courseClass;
+    private Boolean accepted = null;
+    public EnrollmentConcession(StudentClass studentClass, CourseClass courseClass) {
+        this.studentClass = studentClass;
+        this.courseClass = courseClass;
     }
-
-    public EnrollmentConcession(Student student, Course course, String description){
-        this(student, course);
-        this.description = description;
-    }
-
     public String getDetails() {
-        return String.format("%s wants to enrol in %s", student.getName(), course.getCode());
+        return String.format("%s (%s) wants to enrol in %s (%s)", studentClass.getName(), studentClass.getID(), courseClass.getCourseCode(), courseClass.getProgramDept());
     }
 
-    public String getDescription(){
-        return this.description;
+    public StudentClass getStudentClass(){
+        return studentClass;
+    }
+
+    public CourseClass getCourseClass() {
+        return courseClass;
+    }
+
+    public void acceptConcessionRequest(){
+        this.accepted = true;
+    }
+
+    public void rejectConcessionRequest(){
+        this.accepted = false;
+    }
+
+    public Boolean getAccepted() {
+        return accepted;
     }
 }
