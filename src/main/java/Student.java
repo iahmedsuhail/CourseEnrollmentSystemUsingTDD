@@ -1,8 +1,8 @@
-
-
 import java.util.ArrayList;
 
 public class Student extends Person {
+
+    int feeLiable;
 
     ArrayList<Course> enrolledCourses;
 
