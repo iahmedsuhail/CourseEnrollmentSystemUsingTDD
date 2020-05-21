@@ -16,5 +16,6 @@ public class Student extends Person {
 
     public void enrol(Course courseToEnrol) {
         this.enrolledCourses.add(courseToEnrol);
+        this.feeLiable += courseToEnrol.fee;
     }
 }
