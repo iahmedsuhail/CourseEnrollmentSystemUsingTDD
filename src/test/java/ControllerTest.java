@@ -11,6 +11,13 @@ public class ControllerTest {
     }
 
     @org.junit.Test
+    public void Given_PersonEntersIncorrectDetails_Expect_PersonShouldNotBeAbleToLogin() {
+        Person person = new Person();
+        Controller.login(person, "IncorrectUsername", "IncorrectPassword");
+        assertFalse(person.isLoggedIn());
+    }
+
+    @org.junit.Test
     public void testCanSubmitEnrollmentConcession() {
 //        Mocked student because the getName function doesn't exist
         Student mockedStudent = Mockito.mock(Student.class);
