@@ -10,8 +10,7 @@ public class DropCourseTest {
     @Before
     public void init(){
         studentClass = new StudentClass();
-        
-
+        courseClass = new CourseClass("Software Requirements Engineering", "SOFTENG754", 15, true);  
     }
 
     @Test
