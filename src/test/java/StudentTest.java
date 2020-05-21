@@ -1,3 +1,4 @@
+import static org.junit.Assert.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,5 +18,16 @@ public class StudentTest {
 
 //        This test gets details (as a string) of the enrolledCourses and the course we just added
         assert(student.getEnrolledCourses().get(student.enrolledCourses.size()-1).showInfo().equals(resultEnrolledCourses.get(0).showInfo()));
+    }
+
+    @org.junit.Test
+    public void Given_StudentEnrolsIntoACourse_Expect_TheFeeOwedByTheStudentIncreases(){
+        Student student = new Student();
+        Teacher teacher = new Teacher("Kelly Blincoe");
+        Course course = new Course("Software Requirements Engineering", "SOFTENG754", 15, true, teacher, 500);
+
+        student.enrol(course);
+
+        assertEquals(500, student.feeLiable);
     }
 }
