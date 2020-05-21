@@ -1,3 +1,4 @@
+import org.junit.Test;
 import org.mockito.Mockito;
 import static org.junit.Assert.*;
 
@@ -8,6 +9,13 @@ public class ControllerTest {
         Person person = new Person();
         Controller.login(person,"username", "password");
         assertTrue(person.isLoggedIn());
+    }
+
+    @Test
+    public void Given_PersonEntersIncorrectDetails_Expect_PersonShouldNotBeAbleToLogin() {
+        Person person = new Person();
+        Controller.login(person, "IncorrectUsername", "IncorrectPassword");
+        assertFalse(person.isLoggedIn());
     }
 
     @org.junit.Test
