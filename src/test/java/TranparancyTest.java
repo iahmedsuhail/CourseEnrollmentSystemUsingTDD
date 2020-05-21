@@ -12,7 +12,7 @@ public class TranparancyTest {
     }
     @Test(expected = IllegalStateException.class)
     public void testConcessionsBeforeEnrollment(){
-        ;
+        studentClass.applyForConcession(courseClass);
         studentClass.enrol(new CourseClass("test", "code",01,true));
     }
 }
