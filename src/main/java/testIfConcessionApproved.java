@@ -2,7 +2,7 @@ import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
 import ort.hamcrest.*;
 import org.junit.Test;
-import java util.*;
+import java.util.*;
 
 public class testIfConcessionApproved {
 	
