@@ -1,23 +1,20 @@
-
+package second;
 
 public class Person {
-    String name;
-    public boolean loggedIn;
 
-    public Person() {
-        this.loggedIn = false;
-    }
-
-    public Person(String name) {
-        this();
-        this.name = name;
-    }
-
-    public boolean isLoggedIn() {
-        return loggedIn;
-    }
-
-    public String getName() {
-        return null;
-    }
+	public int ID;
+	String name;
+	public int age;
+	
+	
+	public Person(int ID,String name,int age) {
+		this.ID = ID;
+		this.name = name;
+		this.age = age;
+	}
+	
+	
+	
+	
+	
 }
